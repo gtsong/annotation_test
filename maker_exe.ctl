@@ -7,7 +7,7 @@ RepeatMasker=/home/sj/AGAPE/programs/RepeatMasker/RepeatMasker #location of Repe
 exonerate=/usr/bin/exonerate #location of exonerate executable ###
 
 #-----Ab-initio Gene Prediction Algorithms
-snap=/usr/bin/snap #location of snap executable ###
+snap=/usr/bin/snap-dna#location of snap executable ###
 gmhmme3=/home/sj/AGAPE/programs/gm_et_linux_64/gmes_petap/gmhmme3 #location of eukaryotic genemark executable ###
 gmhmmp=/home/sj/AGAPE/programs/gm_et_linux_64/gmes_petap/gmhmmp #location of prokaryotic genemark executable ###
 augustus=/home/sj/AGAPE/programs/augustus/bin/augustus #location of augustus executable ###
