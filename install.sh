@@ -67,11 +67,11 @@ git clone https://github.com/adamlabadorf/ucsc_tools.git
 
 mkdir AGAPE/programs
 
-cat tar/a.tar.gz* | tar xvzf -
+cat annotation_test/tar/a.tar.gz* | tar xvzf -
 mv -f cfg_files/* AGAPE/cfg_files
 rmdir cfg_files
 
-tar xvzf utils.tar.gz
+tar xvzf annotation_test/utils.tar.gz
 mv -f utils/* AGAPE/src/utils
 cd AGAPE/src/utils
 make
@@ -89,7 +89,7 @@ mv -f axtChainNet AGAPE/programs/axtChainNet
 mv -f ucsc_tools/executables/faSize AGAPE/programs/axtChainNet
 
 # genemark
-tar xvzf gm_et_linux_64.tar.gz
+tar xvzf annotation_test/gm_et_linux_64.tar.gz
 cp gm_et_linux_64/gmes_petap/gm_key ~/.gm_key
 mv gm_et_linux_64 AGAPE/programs/gm_et_linux_64
 
@@ -134,9 +134,9 @@ perl ./Build.PL
 cd ../..
 mv -f maker AGAPE/programs/maker
 
-mv -f configs.cf AGAPE/configs.cf
-mv -f maker_exe.ctl AGAPE/cfg_files/maker_exe.ctl
-mv -f GeneMark_hmm.mod AGAPE/programs/gm_et_linux_64/gmes_petap/GeneMark_hmm.mod
+mv -f annotation_test/configs.cf AGAPE/configs.cf
+mv -f annotation_test/maker_exe.ctl AGAPE/cfg_files/maker_exe.ctl
+mv -f annotation_test/GeneMark_hmm.mod AGAPE/programs/gm_et_linux_64/gmes_petap/GeneMark_hmm.mod
 
 chmod 775 AGAPE/configs.cf
 chmod 775 AGAPE/cfg_files/maker_exe.ctl
@@ -152,5 +152,5 @@ dos2unix AGAPE/non_ref.sh
 dos2unix AGAPE/run_comb_annot.sh
 
 rm -f axtChainNet.zip augustus-3.3.tar.gz RepeatMasker-open-4-0-7.tar.gz ncbi-rmblastn-2.2.28-x64-linux.tar.gz maker-2.31.9.tgz
-rm -rf nanoscope thesis ncbi-rmblastn-2.2.28 ucsc_tools
+rm -rf nanoscope thesis annotation_test ncbi-rmblastn-2.2.28 ucsc_tools
 rm -f install.shg
