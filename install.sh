@@ -1,8 +1,6 @@
 #!/bin/bash
-
-# options
-#sudo sed -i 's/kr.archive.ubuntu.com/ftp.daum.net/g' /etc/apt/sources.list
-#sudo sed -i 's/us.archive.ubuntu.com/ftp.daum.net/g' /etc/apt/sources.list
+# Sometimes error happens due to updated version of program. 
+# chaeck error message and change program version!!.
 
 sudo dpkg --add-architecture i386
 
@@ -128,7 +126,7 @@ sudo mv -f trf409.linux64 /usr/local/bin
 
 # augustus
 tar xvzf augustus.current.tar.gz
-cd augustus
+cd augustus-3.3.1
 make
 cd src
 make
