@@ -131,7 +131,7 @@ make
 cd src
 make
 cd ../..
-mv -f augustus AGAPE/programs/augustus
+mv -f augustus-3.3.1 AGAPE/programs/augustus
 
 # maker
 tar xvzf maker-2.31.9.tgz
@@ -159,6 +159,6 @@ dos2unix AGAPE/intervals.sh
 dos2unix AGAPE/non_ref.sh
 dos2unix AGAPE/run_comb_annot.sh
 
-rm -f axtChainNet.zip augustus-3.3.tar.gz RepeatMasker-open-4-0-7.tar.gz ncbi-rmblastn-2.2.28-x64-linux.tar.gz maker-2.31.9.tgz
+rm -f axtChainNet.zip augustus.current.tar.gz RepeatMasker-open-4-0-7.tar.gz ncbi-rmblastn-2.2.28-x64-linux.tar.gz maker-2.31.9.tgz
 rm -rf nanoscope thesis annotation_test ncbi-rmblastn-2.2.28 ucsc_tools
 rm -f install.shg
