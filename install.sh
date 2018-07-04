@@ -15,6 +15,10 @@ sudo apt-get install -y cpanminus
 sudo apt-get install -y unzip
 sudo apt-get install -y g++
 sudo apt-get install -y make
+sudo apt-get install -y python-pip
+sudo apt-get install -y python-biopython   
+sudo apt-get install -y python-setuptools
+pip install --upgrade pip
 
 sudo cpanm -n local::lib
 sudo cpanm -n DBI
@@ -64,6 +68,12 @@ git clone https://github.com/kuleshov/nanoscope.git
 git clone https://github.com/hyphaltip/thesis.git
 git clone https://github.com/yeastgenome/AGAPE.git
 git clone https://github.com/adamlabadorf/ucsc_tools.git
+git clone git://github.com/chapmanb/bcbb.git
+
+cd bcbb/gff
+python setup.py build
+sudo python setup.py install
+cd ../..
 
 mkdir AGAPE/programs
 
