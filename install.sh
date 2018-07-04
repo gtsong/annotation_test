@@ -72,6 +72,7 @@ cd bcbb/gff
 python setup.py build
 sudo python setup.py install
 cd ../..
+mv -f bcbb AGAPE/programs
 
 mkdir AGAPE/programs
 
