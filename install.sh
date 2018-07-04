@@ -127,7 +127,7 @@ sudo ln -s trf409.linux64 /usr/local/RepeatMasker
 sudo mv -f trf409.linux64 /usr/local/bin
 
 # augustus
-tar xvzf augustus-3.3.tar.gz
+tar xvzf augustus.current.tar.gz
 cd augustus
 make
 cd src
