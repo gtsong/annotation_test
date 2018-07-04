@@ -53,7 +53,7 @@ sudo apt-get install -y postgresql
 sudo apt-get install -y dos2unix
 
 wget http://hgwdev.cse.ucsc.edu/~kent/exe/linux/axtChainNet.zip
-wget http://bioinf.uni-greifswald.de/augustus/binaries/augustus-3.3.tar.gz
+wget http://bioinf.uni-greifswald.de/augustus/binaries/augustus.current.tar.gz
 wget http://www.repeatmasker.org/RepeatMasker-open-4-0-7.tar.gz
 wget ftp://ftp.ncbi.nlm.nih.gov/blast/executables/rmblast/2.2.28/ncbi-rmblastn-2.2.28-x64-linux.tar.gz
 wget http://tandem.bu.edu/trf/downloads/trf409.linux64
