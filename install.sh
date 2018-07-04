@@ -66,7 +66,10 @@ git clone https://github.com/kuleshov/nanoscope.git
 git clone https://github.com/hyphaltip/thesis.git
 git clone https://github.com/yeastgenome/AGAPE.git
 git clone https://github.com/adamlabadorf/ucsc_tools.git
-git clone git://github.com/chapmanb/bcbb.git
+git clone https://github.com/chapmanb/bcbb.git
+git clone https://github.com/tanghaibao/quota-alignment.git
+
+mv -f quota-alignment/ AGAPE/programs
 
 cd bcbb/gff
 python setup.py build
